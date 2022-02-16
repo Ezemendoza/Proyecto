@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+*{margin: 0%;
+padding: 0%;}
+
+
+.menu ul li{
+    display:inline-block;
+    }
+
+.menu ul li a{
+    color: black;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    float: left;
+}
+.menu ul li a:hover{
+    background-color: #55b6f2;
+}
+
+.fondo{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+img {
+    width: 50px;
+    display: inline-block;
+   }
+
+.menuHeaderTitulo{
+    color: black;
+    font-family:'Moon Dance', cursive;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-align: center;
+   
+}
+
+.menuItemTitulo{
+    color: black;
+    font-family:'Moon Dance', cursive;
+    font-style: normal;
+    font-weight: 70;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 1em;
+   padding-left: 100px;
+}
+.menuItemDescripcion{
+    color: black;
+    font-family: 'Moon Dance', cursive;
+    font-style: normal;
+    font-weight: 70;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1em;
+    padding-left: 100px;
+    padding-bottom: 0px;
+}
+
+.menuDivisa{
+    color: black;
+    font-family:'Moon Dance', cursive;
+    font-style: normal;
+    font-weight: 70;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1.6em;
+   padding-left: 40px;
+}
+
+.menuPrecio{
+    color: black;
+    font-family:'Moon Dance', cursive;
+    font-style: normal;
+    font-weight: 70;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1.6em;
+   padding-left: 20px;
+    
+}
+
+
+#formulario{
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+.botonFormulario{
+    background-color: blanchedalmond ;
+}
+
+.botonFormulario:hover{
+    background-color: #55b6f2;
+}
+
+.form{
+    font-family : inherit;
+    font-size   : 100%;
+    width: 100%;
+  }
+
+#ubicacion{
+    width: 100px;
+    padding-right: 54%;
+    padding-left: 40%;
+    bottom: 0;
+}
+
+#ubicacionn{
+    padding-left: 30%;
+    background-color: blanchedalmond;
+    bottom: 0;
+}
+.socialBAR{
+    position: fixed;
+    right: 0;
+    display: flex;
+    z-index: 2000;
+    transition: all 0 5;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 20%;
+    
+}
+
+.socialBAR ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.socialBAR ul li a{
+    display: inline-block;
+    color: white;
+    padding: 10px 15px;
+    
+}
+.icon-twitter{
+    background: #00abf0;
+    
+}
+
+.icon-instagram{
+    background: #3f60a3;
+}
+.icon-youtube{
+    background: #ae181f;
+}
+
+.apellidos{
+    margin-bottom: 1000px;
+}
+
+.footer{
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+
+
+.seccion{
+    color: black;
+    font-family:'Moon Dance', cursive;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 1.6em;
+    text-align: center;
+    background-color: blanchedalmond;
+    z-index: 100%;
+    width: 100%;
+    border: 1px solid;
+}
+
+#sect1{
+    background-color: blanchedalmond;
+}
+#sector2{
+    height: 0%;
+}
+.sect1{
+    height: 0%;
+}
+.tituloFooter{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 40px;
+
+    text-transform: capitalize;
+    
+}
+
+.informacionFooter{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 18%;
+}
+
+
+.imagen{
+    width: 100%;
+    max-height: max-content;
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+
+.galeria{
+    width: 100%;
+    background-color: blanchedalmond    ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.galeria h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+}
+#contacto{
+   background-color: blanchedalmond;
+}
+
+.contenedor{
+    width: 90%;
+    height: auto;
+    display: grid;
+   grid-template-areas:"item1 item3 item6" 
+                       "item2 item5 item7"
+                       "item3 item6 item4" ;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr ;
+ 
+}
+
+.item{
+    min-width: 200px;
+    min-height: 200px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.item1{
+    grid-area: "item1";
+    grid-column:1/2;
+    grid-row: 1/3;
+    background-image: url(../imagenes/galeria1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
+}
+
+.item2{
+    grid-area: "item2";
+    background-image: url(../imagenes/galeria2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.item3{
+    grid-area: "item3";
+    grid-column: 3/5;
+    grid-row: 1/2;
+    background-image: url(../imagenes/galeria3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item4{
+    grid-area: "item4";
+    grid-row: 2/4;
+    background-image: url(../imagenes/galeria6.jpg);
+    background-position: left;
+    background-size: cover;
+}
+.item5{
+    grid-area: "item5";
+    background-image: url(../imagenes/galeria4.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+.item6{
+    grid-area: "item6";
+    background-image: url(../imagenes/galeria5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item7{
+    grid-area: "item7";
+    background-image: url(../imagenes/galeria8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.item8{
+    grid-area: "item8";
+    grid-column: 3/5;
+    background-image: url(../imagenes/galeria7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.item:hover{
+    transform: scale(1.25);
+    transition: all 0.8s;
+}
+
+@media  (min-width: 320px) and (max-width: 480%) {
+ 
+    #ubicacionn{
+        padding-left: 0%;
+    }
+    .ubicacion{
+        color: black;
+        font-family:'Moon Dance', cursive;
+        font-style: normal;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 1.6em;
+        text-align: left;
+        background-color: blanchedalmond;
+        z-index: 100%;
+        width: 100%;
+        border: 1px solid;
+    }
+}
