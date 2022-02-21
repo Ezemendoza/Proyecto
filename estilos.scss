@@ -3,14 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.body{
+    background: var(--fondo);
+    font-family:'Open Sans', sans-serif;
 
+}
 .socialBAR{
     position: fixed;
-    right: 0; 
+    left: 0%; 
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 20%;
+    padding-top: 10%;
     z-index: 1000;
         ul li{
         list-style: none;
@@ -18,19 +27,22 @@
         a{
             display: inline-block;
             color: white;
-            padding: 10px 15px;
-            
-        }
+            padding: 15px 35px;
+            &:hover{
+                padding: 10px 60px;
+                transition: all .4s;
+            }
+           
+}
 }
 }
 
-.icon{
-    color: white;
-    text-decoration: none;
-    padding: .7rem;
-    display: flex;
-    transition: all 0 5;
+.nav-link:hover{
+transform: scale(1.25);
+transition-duration: 0.4s;
 }
+
+
 .icon-twitter{
     background: #00abf0;
     
@@ -43,52 +55,14 @@
     background: #ae181f;
 }
 
-.apellidos{
-    margin-bottom: 1000px;
-}
 
 .footer{
     background-color: black;
     padding: 20px;
     color: white;
-}
+    background: linear-gradient(to bottom, #2b2b2b, black);
+    }
 
-
-
-.seccion{
-    color: black;
-    font-family: 'Moon Dance', cursive;
-    font-style: normal;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 60px;
-    line-height: 1.6em;
-    text-align: center;
-    background-color: #d6d6d6;
-    z-index: 100%;
-    width: 100%;
-    border: 1px solid;
-}
-
-#sect1{
-    background-color: white;
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.lista{
-    text-align: left;
-    line-height: 60px;
-    list-style-type:disc;
-    font-size: medium;
-    
-}
-#sector2{
-    height: 0%;
-    background-color: white;
-}
 
 .tituloFooter{
     display: inline-flex;
@@ -112,80 +86,107 @@
 
 
 
-.galeria{
-    width: 100%;
-    background-color: white  ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    border: 2px black;
-    
-}
-
-.galeria h1{
-    text-align: center;
-    text-transform: capitalize;
-    color: white;
-}
-
-
 .contenedor{
-    width: 98%;
-    height: auto;
-    display: grid;
-   grid-template-areas:"item1 item3 item6" 
-                       "item2 item5 item7"
-                       "item3 item6 item4" ;
- grid-template-columns: 1fr 1fr 1fr 1fr; 
+    width: 90%;
+    margin: 0%;
 }
 
-.item{
-    min-width: 150px;
-    min-height: 200px;
+.foto-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: url(https://scontent.ffdo3-1.fna.fbcdn.net/v/t39.30808-6/273897371_3184528281763619_1536383692736201913_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=a26aad&_nc_ohc=EcftO5BBSI0AX81qNO2&_nc_ht=scontent.ffdo3-1.fna&oh=00_AT_r552b_-eyRCdh6h-Hl1d3g7aQwRn5HUg3lvBc4zU2yQ&oe=62121DD3);
+	background-position: center ;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+        .contenedor{margin: 0 auto;
+            margin-bottom: 6.25em;}
+}
+
+.foto-principal .titulo {
+	font-weight: 600;
+	font-size: 2.80em;
+	margin-bottom: 0.4em;
+}
+
+.foto-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.foto-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.foto-principal .boton:hover {
+	background: #fff;
+	color: #000;
+    transition: all 1.5s;
+}
+
+#recomendados{
+    bottom: 15%;
+    background: linear-gradient(to bottom, white, rgba(0,0,0, 0.5));
+}
+#recomendados .boton{
+    background: rgba(0,0,0, 0.5);
+	border-radius: 0.31em;
+    width: 100%;
+	color: #fff;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.57em;
+}
+
+#contacto{
+    background-color: rgba(0,0,0, 0.5);
+    background: linear-gradient(to bottom, rgba(0,0,0, 0.5),#2b2b2b );
+}
+
+.DescripcionHeaderContentRight{
+    font-size: 1.20rem;
+    animation-delay: 4s;
+    transition: 1.5s;
+}
+#botonHeaderContentRight{
+    margin-left: 45%;
     background-color: white;
-    border: 1px solid black;
 }
 
-.item1{
-    grid-area: "item1";
-    grid-column:1/1;
-    grid-row: 1/3;
-    background-image: url(imagenes/galeria1.jpg);
-    background-position: right;
-    background-size: cover;
-    
-
+#botonHeaderContentRight:hover{
+   transition: 3s;
+   transform: scale(1.3);
+   background: #000;
 }
 
-.item2{
-    grid-area: "item2";
-    grid-column:2/2;
-    grid-row: 1/3;
-    background-image: url(imagenes/galeria2.jpg);
-    background-position: center;
-    background-size: cover;
+#videotutorial{
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
-.item3{
-    grid-area: "item3";
-    grid-column: 3/3;
-    grid-row: 1/3;
-    background-image: url(imagenes/galeria3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.item4{
-    grid-area: "item4";
-    grid-row: 1/3;
-    background-image: url(imagenes/galeria4.jpg);
-    background-position: left;
-    background-size: cover;
+
+.posicionFoto{
+    animation-delay: 4s;
 }
 
-.item:hover{
-    transform: scale(1.25);
+.posicionFoto:hover{
+    transform: scale(1.13);
     transition: all 0.5s;
+ 
 }
 
 
@@ -219,24 +220,6 @@ $base-color: #b0eaff;
 }
 
 
-.tituloPreguntasFrecuentes{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.contenedor-preguntas{
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    border: black;
-    
-    
-}
-
-.posicion{
-    text-align: center;
-    left:20%;
-}
 
 @media screen and (max-width: 720px){
     .contenedor{
@@ -259,6 +242,13 @@ $base-color: #b0eaff;
     .galeria{
         justify-content: space-between;
     }
+    .foto-principal {
+		font-size: 14px;
+	}
+
+	.foto-principal .descripcion {
+		max-width: 100%;
+	}
 }
 
 
