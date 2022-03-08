@@ -55,7 +55,7 @@
   background-color: black;
   padding: 20px;
   color: white;
-  background: linear-gradient(to bottom, #2b2b2b, black);
+  background: linear-gradient(to bottom, #4f4f4f, black);
 }
 
 .tituloFooter {
@@ -132,7 +132,7 @@
 
 #recomendados {
   bottom: 15%;
-  background: linear-gradient(to bottom, white, rgba(0, 0, 0, 0.5));
+  background: linear-gradient(to bottom, white, #919191);
 }
 
 #recomendados .boton {
@@ -147,18 +147,20 @@
 
 #contacto {
   background-color: rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #2b2b2b);
+  background: linear-gradient(to bottom, #666666, #4f4f4f);
 }
 
 .DescripcionHeaderContentRight {
   font-size: 1.2rem;
+  font-weight: 400;
   animation-delay: 4s;
   transition: 1.5s;
 }
 
 #botonHeaderContentRight {
-  margin-left: 45%;
   background-color: white;
+  margin-left: 48%;
+  margin-bottom: 1rem;
 }
 
 #botonHeaderContentRight:hover {
@@ -168,9 +170,7 @@
 }
 
 #videotutorial {
-  margin-left: 10%;
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: 1.75rem;
 }
 
 .posicionFoto {
@@ -182,10 +182,48 @@
   transition: all 0.5s;
 }
 
+#tituloContacto {
+  text-align: center;
+  color: white;
+}
+
+#parrafoContacto {
+  text-align: center;
+  color: white;
+}
+
 .calendario {
   display: grid !important;
   grid-template-columns: repeat(5, 4fr);
   height: 1000px;
+}
+
+.instructivo {
+  background: linear-gradient(to bottom, #919191, #666666);
+}
+
+.tituloTemario {
+  padding-top: 6.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 1s;
+  color: white;
+}
+
+.parrafoInstructivo {
+  padding-top: 1.85rem;
+  font: 600;
+  font-size: 1rem;
+  text-transform: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  text-transform: none;
+  font-weight: lighter !important;
+  text-align: justify;
+  padding-bottom: 2.5rem;
+  color: white;
 }
 
 .calendario1 {
@@ -360,16 +398,14 @@
 @media screen and (max-width: 720px) {
   .contenedor {
     width: 48%;
-    height: auto;
     display: grid;
     grid-template-areas: "item1 item3 item6" "item2 item5 item7" "item3 item6 item4";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 
   .foto-principal {
     font-size: 15px;
-    min-height: 20.62em;
     color: #fff;
     background: url(imagenes/corousel9.jpg);
     background-position: center;
@@ -389,25 +425,32 @@
 
   .foto-principal .titulo {
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 1.9em;
+    width: 100%;
   }
 
   .foto-principal .descripcion {
     font-weight: normal;
     font-size: 0.8rem;
-    line-height: 1.75em;
+    line-height: 1.25em;
     margin-bottom: 1.25em;
+    width: 100%;
   }
 
   .foto-principal .boton {
     background: rgba(0, 0, 0, 0.5);
     border: none;
     color: #fff;
-    margin-right: 1.25em;
     cursor: pointer;
     transition: 0.3s ease all;
-    font-size: 0.7rem;
-    padding: 0.27em 0.05em;
+    font-size: 0.9rem;
+    padding: 1rem 5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  #botonHeaderContentRight {
+    margin-right: 4%;
   }
 }
 
